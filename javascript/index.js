@@ -94,19 +94,19 @@ findBtn.addEventListener("click", function () {
 async function request(cityorlat, lon = "") {
   if (lon == "") {
     var req = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=0be2c733158c4be989455056230408&q=${cityorlat}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=0be2c733158c4be989455056230408&q=${cityorlat}&aqi=no`
     );
     var res = await req.json();
     var req2 = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=0be2c733158c4be989455056230408&q=${cityorlat}&days=3&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=0be2c733158c4be989455056230408&q=${cityorlat}&days=3&aqi=no&alerts=no`
     );
   } else {
     var req = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=0be2c733158c4be989455056230408&q=${cityorlat},${lon}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=0be2c733158c4be989455056230408&q=${cityorlat},${lon}&aqi=no`
     );
     var res = await req.json();
     var req2 = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=0be2c733158c4be989455056230408&q=${cityorlat},${lon}&days=3&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=0be2c733158c4be989455056230408&q=${cityorlat},${lon}&days=3&aqi=no&alerts=no`
     );
   }
   var res2 = await req2.json();
