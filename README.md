@@ -12,7 +12,8 @@ A simple front-end weather application that detects your location and provides c
 
 Check out the live demo [here](https://miraa8.github.io/weatherApp/).
 
-##Built With
+## Built With
+
 HTML5
 CSS3
 JavaScript
