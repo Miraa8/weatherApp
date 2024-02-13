@@ -14,6 +14,6 @@ Check out the live demo [here](https://miraa8.github.io/weatherApp/).
 
 ## Built With
 
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
